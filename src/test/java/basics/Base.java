@@ -23,8 +23,8 @@ public class Base {
         driver.get("https://ksrtc.in/oprs-web/guest/home.do?h=1");
         homePage=new HomePage(driver);
     }
-//    @AfterClass
-//    public void tearDown(){
-//        driver.quit();
-//    }
+    @AfterClass
+    public void tearDown(){
+        driver.quit();
+    }
 }
